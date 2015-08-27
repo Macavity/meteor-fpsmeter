@@ -12,6 +12,8 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.addFiles('fpsmeter.js');
-  api.addFiles('fpsmeter/dist/fpsmeter.js', 'client', {bare: true});
+
+  api.use('templating', 'client');
+
+  api.addFiles(['fpsmeter/dist/fpsmeter.js','fpsmeter.html','fpsmeter_helper.js'], 'client', {bare: true});
 });
