@@ -15,5 +15,5 @@ Package.onUse(function(api) {
 
   api.use('templating', 'client');
 
-  api.addFiles(['fpsmeter/dist/fpsmeter.js','fpsmeter.html','fpsmeter_helper.js'], 'client', {bare: true});
+  api.addFiles(['fpsmeter/src/fpsmeter.js' /*'fpsmeter/src/themes.js',*/ ], 'client');
 });
